@@ -1,0 +1,18 @@
+<p class="p">Select a song you want to listen</p>
+<button  *ngFor="let classSong of mysongs; let i = index"
+id='s{{0}}' (click)="onClickMe(i)">{{classSong.sName}}</button>
+<section class="grid">
+<div id="button">
+
+</div>
+<div class="song">
+<p >SONG INFORMATION</p><br>
+<strong>Song Name: </strong>{{ myname}}<br><br>
+<strong>Artist:</strong>{{ artist}}<br><br>
+<strong>Genre:</strong>{{ genre}}<br><br>
+<strong>Year Released:</strong>{{ YReleased}}<br>
+</div>
+<img src={{picture}}/>
+</section>
+
+
